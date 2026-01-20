@@ -1,60 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Typing Speed Test</title>
-
-  <style>
-    /* CSS reset and styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box; 
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    h1 {
-      background: #2980b9;
-      color: white;
-      padding: 20px;
-      text-align: center; 
-    }
-
-    textarea {
-      width: 100%;
-      padding: 12px 20px;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
-      resize: none;
-    }
-
-    button {
-      padding: 12px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 4px;
-      background-color: #4CAF50;
-      color: white;
-      cursor: pointer;
-    }
-
-    #message {
-      margin: 10px 0 20px;
-      text-align: center;
-    }
-
-  </style>
-
 </head>
 
 <body>
@@ -71,54 +20,8 @@
 
   </div>
 
-  <script>
-    const words = [
-      "Hello", 
-      "Welcome",
-      "to",
-      "the", 
-      "typing",
-      "speed",
-      "test"
-    ];
-
-    const msgEl = document.querySelector("#message");
-    const wordsEl = document.querySelector("#words");
-    const startBtn = document.querySelector("#start");  
-
-    let startTime, endTime;
-
-    startBtn.addEventListener("click", startTest);
-
-    function startTest() {
-      const randomWord = words[Math.floor(Math.random() * words.length)];
-      msgEl.innerText = randomWord;
-      wordsEl.disabled = false;
-      wordsEl.value = "";
-      wordsEl.focus();
-      startTime = new Date().getTime();
-    }
-
-    function endTest() {
-      endTime = new Date().getTime();
-      const totalTime = (endTime - startTime) / 1000;
-      const wordCount = wordsEl.value.split(" ").length; 
-      const speed = Math.round(wordCount / totalTime * 60);
-
-      const msg = `You typed at ${speed} words per minute`;
-      
-      wordsEl.disabled = true;
-      startBtn.innerText = "Start";      
-      msgEl.innerText = msg;
-    }
-
-    wordsEl.addEventListener("input", () => {
-      const typedWord = wordsEl.value; 
-      if(typedWord === randomWord) {
-        endTest();
-      }
-    });
-  </script>
+  <script type="module" src="/src/main.ts"></script>
 
 </body>
+
 </html>
