@@ -1,16 +1,26 @@
 # 10-typing-speed-trainer
-⌨️ Test and improve your typing speed.
-[![Deploy](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mk-knight23/10-typing-speed-trainer)
+
+✨ Professional Repository Showcase Template
+
+## Live Deployments
+
+- **GitHub Pages:** https://mk-knight23.github.io/10-typing-speed-trainer/
+- **Vercel:** https://10-typing-speed-trainer.vercel.app
+
+Status: 🟡 GH Pages Live | Vercel Pending (Daily Limit)
 
 ## Features
-- 📊 WPM tracking
-- ⏱️ Timer countdown
-- 📝 Random text generation
-- 🎯 Accuracy tracking
+- 📱 Mobile Responsive
+- ⚡ Fast Performance
+- 🎨 Modern UI/UX
 
 ## Quick Start
 ```bash
-git clone https://github.com/mk-knight23/10-typing-speed-trainer.git && cd 10-typing-speed-trainer && npm i && npm run dev
+git clone https://github.com/mk-knight23/10-typing-speed-trainer.git
+cd 10-typing-speed-trainer
+npm install
+npm run dev
 ```
+
 ## License
 MIT
