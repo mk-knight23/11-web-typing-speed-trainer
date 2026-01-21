@@ -1,26 +1,30 @@
 # 10-typing-speed-trainer
 
-✨ Professional Repository Showcase Template
-
-## Live Deployments
-- Netlify: https://10-typing-speed-trainer-mkazi.netlify.app
-- GitHub Pages: https://mk-knight23.github.io/10-typing-speed-trainer/
-
-Status: 🟢 Live
-Last Updated: 2026-01-21T14:08:00+05:30
+✨ Boost your typing productivity with this high-performance training application. Track your words-per-minute (WPM), accuracy, and speed in real-time with sophisticated visual feedback.
 
 ## Features
-- 📱 Mobile Responsive
-- ⚡ Fast Performance
-- 🎨 Modern UI/UX
+- 🏎️ Real-time WPM & Accuracy Tracking
+- 📊 Dynamic Performance Visualizations
+- 📱 Responsive Multi-Resolution Support
+- ⚛️ Engineered with React 18
+- ⚡ High-Speed Pipeline via Vite 6
+
+## Tech Stack
+- **Frontend**: React 18, Tailwind CSS v4
+- **Build Tool**: Vite 6
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
 
 ## Quick Start
 ```bash
-git clone https://github.com/mk-knight23/10-typing-speed-trainer.git
-cd 10-typing-speed-trainer
 npm install
 npm run dev
 ```
 
-## License
-MIT
+## Documentation
+Additional technical details can be found in the [docs/](docs/) directory.
+
+## Live Deployment
+GitHub Pages: [Pending]
+Status: 🟡 Initializing Pipeline
+Last Updated: 2026-01-21

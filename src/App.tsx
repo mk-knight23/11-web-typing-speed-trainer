@@ -75,16 +75,16 @@ function App() {
         <div className="min-h-screen flex flex-col items-center justify-center p-6 selection:bg-yellow-500/30">
             <div className="w-full max-w-4xl space-y-20">
 
-                {/* Header Stats */}
+                {/* Premium Header Stats */}
                 <div className="flex justify-between items-end px-4">
-                    <div className="flex items-center gap-2 font-black text-2xl text-yellow-500 tracking-tighter">
-                        <Keyboard className="w-8 h-8" />
-                        <span>TYPE<span className="text-zinc-500">MK</span></span>
+                    <div className="flex items-center gap-3 font-black text-3xl text-yellow-400 tracking-[-0.08em]">
+                        <Keyboard className="w-10 h-10 drop-shadow-[0_0_20px_rgba(250,204,21,0.3)]" />
+                        <span>TYPE<span className="text-zinc-600">_MK</span></span>
                     </div>
 
-                    <div className="flex gap-12">
-                        <Stat label="wpm" value={currentWpm} icon={<Zap className="w-4 h-4" />} color="text-yellow-500" />
-                        <Stat label="acc" value={`${accuracy}%`} icon={<Target className="w-4 h-4" />} color="text-zinc-400" />
+                    <div className="flex gap-16">
+                        <Stat label="wpm" value={currentWpm} icon={<Zap className="w-4 h-4" />} color="text-yellow-400" />
+                        <Stat label="acc" value={`${accuracy}%`} icon={<Target className="w-4 h-4" />} color="text-zinc-500" />
                     </div>
                 </div>
 
