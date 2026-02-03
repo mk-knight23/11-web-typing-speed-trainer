@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "11-web-keyboard-practice",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

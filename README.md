@@ -1,59 +1,68 @@
 # 11 Web Keyboard Practice
 
-✨ Boost your typing productivity with this high-performance training application. Track your words-per-minute (WPM), accuracy, and speed in real-time with sophisticated visual feedback.
-
-## 🚀 Live Demo
-**[View Live on Vercel](https://11-web-keyboard-practice.vercel.app)**
-
-## 📦 Deployment
-
-### Render (One-Click Deploy)
-This repository includes a `render.yaml` blueprint for automated deployment:
-1. Visit [dashboard.render.com](https://dashboard.render.com)
-2. Click "New +" → "Blueprint"
-3. Connect repository: `mk-knight23/11-web-keyboard-practice`
-4. Render will auto-detect and apply the blueprint configuration
-
-### Manual Deployment
-- **Build Command**: `npm run build`
-- **Publish Directory**: `dist`
-
-## Features
-- 🏎️ Real-time WPM & Accuracy Tracking
-- 📊 Dynamic Performance Visualizations
-- 📱 Responsive Multi-Resolution Support
-- ⚛️ Engineered with React 18
-- ⚡ High-Speed Pipeline via Vite 6
+Premium typing speed trainer built with React 19, Vite 6, and Tailwind CSS v4. Track your words-per-minute (WPM), accuracy, and speed in real-time with sophisticated visual feedback.
 
 ## Tech Stack
-- **Frontend**: React 18, Tailwind CSS v4
+
+- **Frontend**: React 19, TypeScript, Tailwind CSS v4
 - **Build Tool**: Vite 6
 - **Icons**: Lucide React
-- **Animations**: Framer Motion
+- **Animations**: Framer Motion, Canvas Confetti
+- **Testing**: Vitest, React Testing Library
+
+## Features
+
+- Real-time WPM and accuracy tracking
+- High score persistence via localStorage
+- Confetti celebration on test completion
+- Responsive design for all screen sizes
+- Keyboard navigation (Tab + Enter to restart)
+- Accessibility support with ARIA labels
 
 ## Quick Start
+
 ```bash
 npm install
 npm run dev
 ```
 
-## Documentation
-- [Architecture Overview](docs/ARCHITECTURE.md)
-- [Design System](docs/DESIGN.md)
-- [Deployment Guide](docs/DEPLOY.md)
+## Build
 
-## Live Deployment
-- **GitHub Pages**: [https://mk-knight23.github.io/11-web-keyboard-practice/](https://mk-knight23.github.io/11-web-keyboard-practice/)
-- **Status**: 🟢 Live
-- **Modernized**: 2026-01-23
+```bash
+npm run build
+```
+
+## Live Deployments
+
+Auto-deployed from GitHub main branch:
+
+| Platform | URL |
+|----------|-----|
+| **Vercel** | https://11-web-keyboard-practice.vercel.app |
+| **Render** | https://11-web-keyboard-practice.onrender.com |
+| **Firebase** | https://web-keyboard-practice.web.app |
+| **AWS Amplify** | https://main.web-keyboard-practice.amplifyapp.com |
+| **GitHub Pages** | https://mk-knight23.github.io/11-web-keyboard-practice/ |
+
+## Deployment Configuration
+
+### Render
+- Blueprint: `render.yaml`
+- Build Command: `npm run build`
+- Publish Directory: `dist`
+
+### Vercel
+- Configuration: `vercel.json`
+- Auto-deploy on push to main
+
+### Firebase Hosting
+- Configuration: `firebase.json`
+- GitHub Actions workflow: `.github/workflows/firebase-deploy.yml`
+
+### AWS Amplify
+- Configuration: `amplify.yml`
+- Build output: `dist`
 
 ---
+
 *Maintained by [Kazi Musharraf](https://github.com/mk-knight23)*
-
-## 🌐 Live Deployments
-
-- Vercel: https://11-web-keyboard-practice.vercel.app
-- GitHub Pages: https://mk-knight23.github.io/11-web-keyboard-practice/
-
-Status: 🟢 Deployments Live  
-Last Updated: 2026-01-23
